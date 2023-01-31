@@ -47,6 +47,7 @@ $products = $data->getAllProduct();
         
         <!--responsive.css-->
         <link rel="stylesheet" href="views/assets/css/responsive.css">
+		<script src="https://cdn.tailwindcss.com"></script>
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -149,7 +150,8 @@ $products = $data->getAllProduct();
                             	</form> 
 								<form method="post"  action="update">
                                 <input type="hidden" name="id" value="<?php echo $product['Id'];?>"/>
-                                <button class="btn btn-warning">Update</button>
+                                <button class="btn btn-danger">Update</button>
+								<!-- <button type="button" class="btn text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">update</button> -->
                             	</form> 
 									<?php } ?>
 							</div>

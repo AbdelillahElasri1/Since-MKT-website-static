@@ -6,7 +6,7 @@
 				                		<a href="#"><span class="lnr lnr-magnifier"></span></a>
 				                	</li><!--/.search-->
 				                	<li class="nav-setting">
-                                        <a href="login"><span class="lnr lnr-user"></span></a>
+				                		<a href="login"><span class="lnr lnr-user"></span></a>
 				                	</li><!--/.search-->
 				                    <li class="dropdown">
 				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
@@ -77,13 +77,14 @@
 									if(isset($_SESSION['logged']) && $_SESSION['logged']==true)
 									{
 										?>
-											<li class="scrollk"><a href="add">ajouter un produit</a></li>
+											<i class="bi bi-plus"><a href="add"></a></i>
+											<!-- <li class="scrollk"><a href="add">ajouter un produit</a></li> -->
 											<li class="scrollk"><a href="logout">Logout</a></li>
 											<?php
 									}else
 									{
 										?>
-<!--										<li class="scrollk"><a href="login">Login</a></li>-->
+										<!-- <li class="scrollk"><a href="login">Login</a></li> -->
 										<?php
 									}
 									?>
